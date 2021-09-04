@@ -1,19 +1,23 @@
-# jsdiff
+# jsdiff-es
 
-[![Build Status](https://secure.travis-ci.org/kpdecker/jsdiff.svg)](http://travis-ci.org/kpdecker/jsdiff)
-[![Sauce Test Status](https://saucelabs.com/buildstatus/jsdiff)](https://saucelabs.com/u/jsdiff)
-
-A javascript text differencing implementation.
+A JavaScript text differencing ES module implementation.
 
 Based on the algorithm proposed in
 ["An O(ND) Difference Algorithm and its Variations" (Myers, 1986)](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.4.6927).
 
-## Installation
-```bash
-npm install diff --save
+## Usage
+
+```js
+import "https://taisukef.github.io/jsdiff-es/src/diff/character.js";
+
+const one = 'beep boop';
+const other = 'beep boob blah';
+
+const diff = diffChars(one, other);
+console.log(diff);
 ```
 
-## API
+## API (TBD)
 
 * `Diff.diffChars(oldStr, newStr[, options])` - diffs two blocks of text, comparing character by character.
 
