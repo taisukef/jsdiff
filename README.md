@@ -8,7 +8,7 @@ Based on the algorithm proposed in
 ## Usage
 
 ```js
-import "https://taisukef.github.io/jsdiff-es/src/diff/character.js";
+import { diffChars } from "https://taisukef.github.io/jsdiff-es/src/diff/character.js";
 
 const one = 'beep boop';
 const other = 'beep boob blah';
